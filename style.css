@@ -1,0 +1,163 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Css Start */
+body{
+    background: #e7ecf9;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 78px;
+    height: 100vh;
+}
+.print{
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-top: 120px;
+    margin-right: 33px;
+    align-items: end;
+}
+.print #operasi{
+    font-family: 'Poppins';
+    font-size: 24px;
+    color: #818181;
+    font-weight: 300;
+}
+.print #hasil{
+    font-family: 'Poppins';
+    font-size: 48px;
+    font-weight: 500;
+    color: #424242;
+}
+
+div.packageTombol{
+    align-self: center;
+    position: absolute;
+    bottom: 33px;
+    display: flex;
+    flex-direction: row;
+    margin-left: 33px;
+    margin-right: 32px;
+    padding: 0;
+    gap: 3.84vw;
+}
+div.tombol{
+    width: 38.4vw;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+div.tombol2{
+    width: 38.4vw;
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+div.column1{
+    display: flex;
+    flex-direction: row;
+    gap: 10%;
+}
+div.row1{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+div.row2{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+button.button{
+    width: 100%;
+    height: 7.38vh;
+    border-radius: 16px;
+    border: 0px solid;
+    background: linear-gradient(132deg, rgba(255, 255, 255, 0.60) 0%, rgba(255, 255, 255, 0.40) 100%);
+    backdrop-filter: blur(6px);
+    color: #38B9FF;
+    font-size: 32px;
+    font-family: Poppins;
+    font-weight: 500;
+    text-align: center;
+}
+
+button.special{
+    color: rgba(133, 133, 133, 1);
+}
+
+button.specialFunc{
+    height: 4.92vh;
+    font-size: 24px;
+}
+button.operasi{
+    background: #ADE2FF;
+    border: 1px solid #ADE2FF;
+    backdrop-filter: blur(6px);
+}
+button.operasiSpesial{
+    height: 12.9vh;
+    border-radius: 12px;
+    background: #19ACFF;
+    color: white;
+}
+button.samadengan{
+    box-shadow: -9px 13px 23px 0px rgba(0, 163, 255, 0.65), -3px 4px 11px 0px #B0DFFF inset;
+}
+button.button:hover{
+    background-color: blanchedalmond;
+}
+button.special:hover{
+    background-color: blanchedalmond;
+}

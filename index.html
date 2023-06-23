@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Bang Jay</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="print">
+            <p id="operasi"></p>
+            <p id="hasil">=12350</p>
+        </div>
+        <div class="packageTombol">
+            <div class="tombol">
+                <div class="column1">
+                    <div class="row1">
+                        <button class="button specialFunc" onclick="insert('e')">e</button>
+                        <button class="button special" onclick="clearText()">Ac</button>
+                        <button class="button" onclick="insert('7')">7</button>
+                        <button class="button" onclick="insert('4')">4</button>
+                        <button class="button" onclick="insert('1')">1</button>
+                    </div>
+                    <div class="row2">
+                        <button class="button specialFunc" onclick="insert('3.14')">pi</button>
+                        <button class="button special" onclick="deleteOp()">DEL</button>
+                        <button class="button" onclick="insert('8')">8</button>
+                        <button class="button" onclick="insert('5')">5</button>
+                        <button class="button" onclick="insert('2')">2</button>  
+                    </div>
+                </div>
+                <button class="button" onclick="insert('0')">0</button>
+            </div>
+            <div class="tombol2">
+                <div class="row1">
+                    <button class="button specialFunc">sin</button>
+                    <button class="button operasi" onclick="insert('/')">/</button>
+                    <button class="button" onclick="insert('9')">9</button>
+                    <button class="button" onclick="insert('6')">6</button>
+                    <button class="button" onclick="insert('3')">3</button>
+                    <button class="button" onclick="insert('.')">.</button>
+                </div>
+                <div class="row2">
+                    <button class="button specialFunc">deg</button>
+                    <button class="button operasi" onclick="insert('*')">*</button>
+                    <button class="button operasi" onclick="insert('-')">-</button>
+                    <button class="button operasi operasiSpesial" onclick="insert('+')">+</button>
+                    <button class="button operasi operasiSpesial samadengan" onclick="hasil()">=</button>  
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="calculatorScript.js"></script>
+</body>
+</html>
